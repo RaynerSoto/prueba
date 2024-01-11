@@ -13,6 +13,14 @@ public class Doctor extends General {
     public Doctor() {
     }
 
+    public Doctor(Long id, String nombre, String apellido_paterno, String apellido_materno,Long especialidad) {
+        super(id, nombre);
+        this.apellido_paterno = apellido_paterno;
+        this.apellido_materno = apellido_materno;
+        this.especialidad.setId(especialidad);
+    }
+
+
     public Doctor(Long id, String nombre, String apellido_paterno, String apellido_materno,Especialidad especialidad) {
         super(id, nombre);
         this.apellido_paterno = apellido_paterno;
